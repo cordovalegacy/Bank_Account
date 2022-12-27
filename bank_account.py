@@ -44,15 +44,15 @@ class BankAccount:
             account.display_account_info()
 # CLS METHOD
 
-user1 = BankAccount(5200, 1.045)
-user2 = BankAccount(105000, 1.02)
+checking = BankAccount(5200, 1.045)
+savings = BankAccount(105000, 1.02)
 
-print(user1.balance, user1.interest_rate)
-print(user2.balance, user2.interest_rate)
+print(checking.balance, checking.interest_rate)
+print(savings.balance, savings.interest_rate)
 
 
-user1.deposit(675).deposit(1450).deposit(375).withdraw(1690).yield_of_interest().display_account_info()
-user2.deposit(5770).deposit(1525).withdraw(70000).withdraw(10000).withdraw(2500).withdraw(2250).yield_of_interest().display_account_info()
+checking.deposit(675).deposit(1450).deposit(375).withdraw(1690).yield_of_interest().display_account_info()
+savings.deposit(5770).deposit(1525).withdraw(70000).withdraw(10000).withdraw(2500).withdraw(2250).yield_of_interest().display_account_info()
 
 # CLS METHOD -- this will print all values. 
 BankAccount.display_all()
